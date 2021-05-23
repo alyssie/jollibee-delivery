@@ -12,13 +12,23 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+            }, 
+            spacing: {
+                'fix-100': '100px',
             },
+            gridTemplateColumns: {
+                '15': 'repeat(15, minmax(0, 1fr))',
+            },
+            gridColumn: {
+                'span-15': 'span 15 / span 15',
+            }
         },
     },
 
     variants: {
         extend: {
             opacity: ['disabled'],
+            margin: ['hover'],
         },
     },
 
